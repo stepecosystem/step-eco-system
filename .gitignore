@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit your real .env
+.env
+.env.local
+!.env.example
+
+# Hardhat build output
+artifacts/
+cache/
+typechain/
+typechain-types/
+coverage/
+
+# Misc
+*.log
+.DS_Store
