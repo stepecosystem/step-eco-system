@@ -1,8 +1,34 @@
-Copyright (c) 2026 Step Eco System
+Step Eco System — Proprietary License
 
-All rights reserved.
+Copyright (c) 2026 Step Eco System. All rights reserved.
 
-This repository and its contents are provided for informational purposes only.
-No part of this project's source code, smart contracts, or assets may be
-copied, modified, distributed, or used without prior written permission from
-the Step Eco System team.
+The contents of this repository (the "Software"), including all Solidity smart
+contracts, scripts, and documentation, are the exclusive property of Step Eco
+System and are protected by copyright and other intellectual-property laws.
+
+The Software is published publicly for the sole purposes of TRANSPARENCY,
+REVIEW, AND AUDITABILITY. Publication does NOT grant any license to use, copy,
+modify, merge, publish, distribute, sublicense, deploy, or sell the Software or
+any derivative of it, in whole or in part, for any commercial or non-commercial
+purpose, without the prior written permission of Step Eco System.
+
+You MAY:
+  - View and read the source code.
+  - Reference it for security review, research, and educational discussion.
+
+You MAY NOT, without prior written permission:
+  - Deploy this code or any derivative to any network.
+  - Reuse this code, in whole or in part, in another project.
+  - Remove or alter this notice.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+For permission requests, contact: stepecosystemteam@gmail.com
+
+Note: contract bytecode previously deployed and verified on Polygon mainnet may
+carry an SPDX identifier from the time of deployment; that on-chain artifact is
+separate from, and does not alter, the terms of this repository license.

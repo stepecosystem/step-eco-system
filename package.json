@@ -1,0 +1,32 @@
+{
+  "name": "step-eco-system-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Step Eco System — a fully on-chain Web3 ecosystem on Polygon (DAI-backed token, binary subscription network, NFT treasury, DEX, AI access, DAO governance).",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "size": "hardhat size-contracts",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "ethereum",
+    "polygon",
+    "solidity",
+    "defi",
+    "smart-contracts",
+    "web3",
+    "dao"
+  ],
+  "author": "Step Eco System <stepecosystemteam@gmail.com>",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.12"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}

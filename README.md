@@ -9,6 +9,9 @@
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.35-363636?style=for-the-badge&logo=solidity)](https://soliditylang.org)
 [![Status](https://img.shields.io/badge/Status-Live%20on%20Mainnet-22c55e?style=for-the-badge)]()
 
+[![CI](https://github.com/stepecosystem/step-eco-system/actions/workflows/ci.yml/badge.svg)](https://github.com/stepecosystem/step-eco-system/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
+
 </div>
 
 ---
@@ -99,9 +102,34 @@ A subscription payment into `StepNet` fans out deterministically: part flows to 
 
 ## 🛠️ Tech Stack
 
-- **Solidity 0.8.35** · OpenZeppelin contracts
-- **Hardhat** deployment ([`scripts/deploy.js`](scripts/deploy.js))
-- **Polygon PoS** (chainId 137)
+- **Solidity 0.8.35** · **OpenZeppelin Contracts v5**
+- **Hardhat** (compile · test · deploy · verify)
+- **Polygon PoS** (chainId 137), EVM target `paris`, `viaIR` enabled
+
+---
+
+## ⚙️ Build & Test
+
+```bash
+git clone https://github.com/stepecosystem/step-eco-system.git
+cd step-eco-system
+npm install
+
+npm run compile   # compile all 10 contracts
+npm test          # run the test suite
+```
+
+Requirements: **Node.js 20+**. Every push and pull request is automatically compiled and tested by [GitHub Actions](.github/workflows/ci.yml).
+
+For deployment, copy `.env.example` to `.env`, fill in your `PRIVATE_KEY` and RPC URLs, then run `scripts/deploy.js` with Hardhat. The `.env` file is gitignored and must never be committed.
+
+---
+
+## 📄 License
+
+**Proprietary — © 2026 Step Eco System. All rights reserved.** See [`LICENSE`](LICENSE).
+
+The source is published for **transparency, review, and auditability**. It is *not* open-source: you may read and audit the code, but reuse, redeployment, or redistribution requires prior written permission.
 
 ---
 
@@ -110,6 +138,7 @@ A subscription payment into `StepNet` fans out deterministically: part flows to 
 - 🚀 dApp: **[net.stepnet.pro](https://net.stepnet.pro)**
 - 🌐 Website: **[stepnet.pro](https://stepnet.pro)**
 - ✉️ Team: **stepecosystemteam@gmail.com**
+- 🔐 Security: see [`SECURITY.md`](SECURITY.md)
 
 ---
 
