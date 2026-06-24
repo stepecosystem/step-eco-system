@@ -10,6 +10,8 @@
 [![Status](https://img.shields.io/badge/Status-Live%20on%20Mainnet-22c55e?style=for-the-badge)]()
 
 [![CI](https://github.com/stepecosystem/step-eco-system/actions/workflows/ci.yml/badge.svg)](https://github.com/stepecosystem/step-eco-system/actions/workflows/ci.yml)
+[![Contract Tests](https://github.com/stepecosystem/step-eco-system/actions/workflows/contracts-test.yml/badge.svg)](https://github.com/stepecosystem/step-eco-system/actions/workflows/contracts-test.yml)
+[![Tests](https://img.shields.io/badge/tests-48%20passing-22c55e.svg)](contracts-test/)
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 
 </div>
@@ -22,7 +24,7 @@
 
 Step Eco System is a non-custodial, fully on-chain protocol. There is no admin key that can move user funds, no oracle that can be manipulated to misprice the token, and no privileged backdoor to the treasury. Every economic rule — token price, reward splits, distribution cadence — is an **immutable constant of the code**, and every administrative change must pass an on-chain **DAO vote + veto window + timelock**.
 
-This repository contains the complete, production source of all ten contracts deployed to Polygon mainnet — the same code that secures real value today.
+This repository contains the complete, production source of all nine contracts deployed to Polygon mainnet — the same code that secures real value today.
 
 ---
 
@@ -114,11 +116,13 @@ git clone https://github.com/stepecosystem/step-eco-system.git
 cd step-eco-system
 npm install
 
-npm run compile   # compile all 10 contracts
+npm run compile   # compile all 9 contracts
 npm test          # run the test suite
 ```
 
-Requirements: **Node.js 20+**. Every push and pull request is automatically compiled and tested by [GitHub Actions](.github/workflows/ci.yml).
+Beyond the top-level suite, [`contracts-test/`](contracts-test/) holds a deep Hardhat suite of **48 unit tests** that assert the money paths directly — the bonding-curve math, the 2% levy, the full DAO governance lifecycle, StepNet activation + daily-reward distribution, subscription billing, the NFT-treasury sale, and the loyalty club.
+
+Requirements: **Node.js 20+**. Every push and pull request is automatically compiled and tested by GitHub Actions ([`ci.yml`](.github/workflows/ci.yml) · [`contracts-test.yml`](.github/workflows/contracts-test.yml)).
 
 For deployment, copy `.env.example` to `.env`, fill in your `PRIVATE_KEY` and RPC URLs, then run `scripts/deploy.js` with Hardhat. The `.env` file is gitignored and must never be committed.
 

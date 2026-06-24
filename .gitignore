@@ -13,6 +13,9 @@ typechain/
 typechain-types/
 coverage/
 
+# Test sources assembled at CI time from ../contracts + ../contracts-src/mocks
+contracts-test/contracts/
+
 # Misc
 *.log
 .DS_Store
