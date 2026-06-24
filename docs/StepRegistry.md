@@ -30,6 +30,8 @@ The registry is deliberately *not* born decentralized — bootstrapping a live s
 
 After step 2, **the only way to change an address is a proposal.**
 
+> **Live status (Polygon mainnet):** step 2 is done — `activateDao()` has executed, so **the DAO is active** and the controller-only mutation paths are closed. The controller keeps only its residual *veto* until `renounceControl()` (step 3, the final one-way step) is called. Confirm anytime with `node contracts-src/verify-onchain.js` or on Polygonscan.
+
 ---
 
 ## How governance works

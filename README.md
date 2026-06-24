@@ -101,6 +101,26 @@ A subscription payment into `StepNet` fans out deterministically: part flows to 
 
 ---
 
+## 🏛️ Governance Status — Live on Mainnet
+
+The protocol is governed **on-chain today** — the DAO is active, not a roadmap promise:
+
+| Stage | Status |
+|---|---|
+| Bootstrap — controller seeds the initial addresses | ✅ complete |
+| **`activateDao()`** — controller mutation paths close; every change now requires vote → veto → timelock | ✅ **active** |
+| `renounceControl()` — controller gives up its residual veto (final, one-way step) | ⏳ pending |
+
+Since `activateDao()`, **there is no direct admin write path**: every address or parameter change must pass a Box-0-weighted DAO vote, a controller veto window, and a timelock. The controller retains only a *veto* — a circuit-breaker, not the power to mutate state — until `renounceControl()` completes the one-way path to full decentralization.
+
+> **Don't trust — verify.** This is live, public state. Read it yourself in one command:
+> ```bash
+> node contracts-src/verify-onchain.js
+> ```
+> It prints `daoActive`, `controlRenounced`, the controller, and the levy whitelist straight from Polygon mainnet — or read them directly on [`StepRegistry` @ Polygonscan](https://polygonscan.com/address/0x708fA8F368D15B8293cD6c0A29a790fC1c7F13Ce#readContract).
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Solidity 0.8.35** · **OpenZeppelin Contracts v5**
