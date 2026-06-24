@@ -1,34 +1,129 @@
-Step Eco System — Proprietary License
+STEP ECO SYSTEM — PROPRIETARY SOFTWARE LICENSE
 
-Copyright (c) 2026 Step Eco System. All rights reserved.
+Copyright (c) 2026 Step Eco System. All Rights Reserved.
 
-The contents of this repository (the "Software"), including all Solidity smart
-contracts, scripts, and documentation, are the exclusive property of Step Eco
-System and are protected by copyright and other intellectual-property laws.
+This is a legal agreement. By accessing, viewing, downloading, cloning, or
+otherwise interacting with this repository or any part of its contents (the
+"Software"), you ("You") acknowledge that You have read, understood, and agree
+to be bound by the terms of this License. If You do not agree, You must not
+access or use the Software.
 
-The Software is published publicly for the sole purposes of TRANSPARENCY,
-REVIEW, AND AUDITABILITY. Publication does NOT grant any license to use, copy,
-modify, merge, publish, distribute, sublicense, deploy, or sell the Software or
-any derivative of it, in whole or in part, for any commercial or non-commercial
-purpose, without the prior written permission of Step Eco System.
+────────────────────────────────────────────────────────────────────────────
+1. DEFINITIONS
+────────────────────────────────────────────────────────────────────────────
+"Software" means all contents of this repository, including without limitation
+all Solidity smart-contract source code, libraries, scripts, tests,
+configuration, documentation, diagrams, text, and the structure, selection, and
+arrangement thereof.
 
-You MAY:
-  - View and read the source code.
-  - Reference it for security review, research, and educational discussion.
+"Licensor" means Step Eco System, the sole owner of the Software.
 
-You MAY NOT, without prior written permission:
-  - Deploy this code or any derivative to any network.
-  - Reuse this code, in whole or in part, in another project.
-  - Remove or alter this notice.
+"Derivative" means any work that is based on, adapts, translates, transforms,
+ports, refactors, or is otherwise derived from the Software, in whole or in
+part.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
-LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+────────────────────────────────────────────────────────────────────────────
+2. OWNERSHIP
+────────────────────────────────────────────────────────────────────────────
+The Software is the exclusive property of the Licensor and is protected by
+copyright, trade-secret, and other intellectual-property laws and international
+treaties (including the Berne Convention). All rights not expressly granted in
+Section 3 are reserved by the Licensor. No title to or ownership of the Software
+is transferred to You by this License or by Your access to it.
 
-For permission requests, contact: stepecosystemteam@gmail.com
+────────────────────────────────────────────────────────────────────────────
+3. LIMITED PERMISSION (WHAT YOU MAY DO)
+────────────────────────────────────────────────────────────────────────────
+The Software is published publicly for the SOLE purposes of TRANSPARENCY,
+SECURITY REVIEW, AND AUDITABILITY. Subject to full compliance with this
+License, the Licensor grants You a personal, non-exclusive, non-transferable,
+revocable permission to:
 
-Note: contract bytecode previously deployed and verified on Polygon mainnet may
-carry an SPDX identifier from the time of deployment; that on-chain artifact is
-separate from, and does not alter, the terms of this repository license.
+  (a) view and read the source code; and
+  (b) reference and quote limited portions of it solely for the purpose of
+      independent security review, academic research, and good-faith public
+      discussion, provided that authorship and copyright are attributed to the
+      Licensor and this notice is not removed.
+
+This is a permission to LOOK, not a license to USE. No other rights are granted.
+
+────────────────────────────────────────────────────────────────────────────
+4. PROHIBITED USES (WHAT YOU MAY NOT DO)
+────────────────────────────────────────────────────────────────────────────
+Except with the prior, express, written permission of the Licensor, You MAY
+NOT, in whole or in part:
+
+  (a) copy, reproduce, store, or republish the Software beyond the transient
+      copy strictly necessary to view it;
+  (b) modify, adapt, translate, refactor, or create any Derivative;
+  (c) distribute, sublicense, lease, lend, sell, or otherwise make the Software
+      or any Derivative available to any third party;
+  (d) deploy, redeploy, compile-and-deploy, or operate the Software or any
+      Derivative on any blockchain, network, testnet, or environment;
+  (e) reuse the Software or any portion, pattern, or mechanism of it in any
+      other project, product, or protocol, whether commercial or non-commercial;
+  (f) use the Software, or any portion of it, to train, fine-tune, benchmark, or
+      evaluate any machine-learning or artificial-intelligence system or dataset;
+  (g) reverse-engineer, decompile, or disassemble any deployed bytecode for the
+      purpose of reconstructing, recreating, or circumventing the Software; or
+  (h) remove, obscure, or alter any copyright, license, or proprietary notice.
+
+────────────────────────────────────────────────────────────────────────────
+5. TRADEMARKS
+────────────────────────────────────────────────────────────────────────────
+"Step Eco System", "StepNet", "STEP", related names, logos, and product names
+are trademarks of the Licensor. This License grants no right to use any Licensor
+trademark.
+
+────────────────────────────────────────────────────────────────────────────
+6. TERM & TERMINATION
+────────────────────────────────────────────────────────────────────────────
+This License is effective until terminated. It terminates automatically,
+without notice, upon any breach by You. Upon termination You must immediately
+cease all access to and use of the Software and destroy all copies in Your
+possession or control. Sections 2, 4, 7, 8, and 9 survive termination.
+
+────────────────────────────────────────────────────────────────────────────
+7. ENFORCEMENT
+────────────────────────────────────────────────────────────────────────────
+You acknowledge that any breach of this License would cause the Licensor
+irreparable harm for which monetary damages would be inadequate, and that the
+Licensor is therefore entitled to seek injunctive and equitable relief, in
+addition to all other remedies available at law, in any competent jurisdiction,
+without the need to post bond. The Licensor may pursue enforcement to the
+fullest extent permitted by applicable law.
+
+────────────────────────────────────────────────────────────────────────────
+8. NO WARRANTY
+────────────────────────────────────────────────────────────────────────────
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+────────────────────────────────────────────────────────────────────────────
+9. LIMITATION OF LIABILITY
+────────────────────────────────────────────────────────────────────────────
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE LICENSOR OR ITS
+CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF FUNDS, OR OTHER
+LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE SOFTWARE OR ITS USE, INTERACTION, OR DEPLOYMENT.
+
+────────────────────────────────────────────────────────────────────────────
+10. GENERAL
+────────────────────────────────────────────────────────────────────────────
+This License is governed by applicable copyright and intellectual-property laws
+and international treaties. If any provision is held unenforceable, the
+remaining provisions remain in full force and effect. This License constitutes
+the entire agreement between You and the Licensor regarding the Software and
+supersedes all prior understandings. The Licensor's failure to enforce any
+provision is not a waiver of it.
+
+For permission requests and all licensing inquiries, contact:
+stepecosystemteam@gmail.com
+
+────────────────────────────────────────────────────────────────────────────
+NOTE ON ON-CHAIN ARTIFACTS
+────────────────────────────────────────────────────────────────────────────
+Contract bytecode previously deployed and verified on Polygon mainnet may carry
+an SPDX identifier from the time of deployment. That on-chain artifact is
+separate from, and does not alter, the terms of this repository License.

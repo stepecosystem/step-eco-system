@@ -2,7 +2,9 @@
 
 Thank you for your interest in Step Eco System.
 
-> **License note:** this project is **proprietary** (see [`LICENSE`](LICENSE)). The source is published for transparency, review, and auditability — not for reuse. By submitting any contribution you agree it may be incorporated under the project's proprietary license.
+> **License & contribution terms:** this project is **proprietary** (see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)). The source is published for transparency, review, and auditability — **not** for reuse.
+>
+> **Contributor agreement:** by submitting any contribution (code, text, or otherwise), you represent that it is your original work and that you have the right to submit it, and you irrevocably **assign all rights, title, and interest** in that contribution to Step Eco System (or, where assignment is not permitted by law, grant a perpetual, worldwide, royalty-free, exclusive license), so it may be incorporated under the project's proprietary license with no obligation of compensation or attribution.
 
 ## How you can help
 

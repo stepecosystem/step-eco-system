@@ -18,6 +18,10 @@
 
 ---
 
+> ⚖️ **Proprietary · All Rights Reserved.** This source is published for **transparency and audit only — not for reuse.** Copying, modifying, redeploying, or reusing any part of it (in whole or in part) without prior written permission is strictly prohibited. See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
+
+---
+
 ## 📜 Philosophy
 
 > **Move Real · Earn Real · Build Forever.**
@@ -150,9 +154,21 @@ For deployment, copy `.env.example` to `.env`, fill in your `PRIVATE_KEY` and RP
 
 ## 📄 License
 
-**Proprietary — © 2026 Step Eco System. All rights reserved.** See [`LICENSE`](LICENSE).
+**Proprietary — © 2026 Step Eco System. All Rights Reserved.** See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
 
-The source is published for **transparency, review, and auditability**. It is *not* open-source: you may read and audit the code, but reuse, redeployment, or redistribution requires prior written permission.
+This repository is **not open source.** It is published for the sole purposes of **transparency, security review, and auditability** — a permission to *look*, not a license to *use*. Every source file is marked `SPDX-License-Identifier: UNLICENSED`.
+
+Without prior written permission you **may not**:
+
+- copy, reproduce, or republish the code beyond viewing it;
+- modify, adapt, refactor, or create derivative works;
+- distribute, sublicense, sell, or share it with third parties;
+- deploy, redeploy, or operate it on any network;
+- reuse any part, pattern, or mechanism in another project;
+- use it to train, fine-tune, or evaluate any AI/ML system; or
+- remove or alter any copyright or license notice.
+
+You **may** read and audit the code, and quote limited portions for good-faith security review or research with attribution. For any other use, written permission is required: **stepecosystemteam@gmail.com**.
 
 ---
 
