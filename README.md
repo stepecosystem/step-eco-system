@@ -46,7 +46,7 @@ This repository contains the complete, production source of all nine contracts d
 | [`StepRegistry.sol`](contracts/StepRegistry.sol) | 867 | **The DAO** — the single source of truth for every contract address, governed by Box-0-weighted voting |
 | [`StepSubscription.sol`](contracts/StepSubscription.sol) | 362 | AI-service access plans, priced in USD and settled in STEP or DAI |
 
-📖 **Each contract has a full deep-dive in [`/docs`](docs/) — section by section, with the security rationale behind every design choice.**
+📖 **Each contract has a full deep-dive in [`/docs`](docs/) — section by section, with the security rationale behind every design choice.** See also the complete [**Interface Reference**](docs/Reference.md) (every API, event, error & constant) and the [**Glossary**](docs/Glossary.md).
 
 ---
 

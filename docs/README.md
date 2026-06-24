@@ -18,3 +18,7 @@ Each document below walks through one contract section by section — what it do
 
 ## Governance
 - [**StepRegistry**](StepRegistry.md) — the DAO and on-chain address book
+
+## Reference
+- [**Interface Reference**](Reference.md) — every contract's external API, events, errors & constants, in one place
+- [**Glossary**](Glossary.md) — plain-language definitions of the domain terms
