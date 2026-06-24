@@ -1,0 +1,44 @@
+name: contracts-test
+
+# Runs the Hardhat unit tests for the production contracts in contracts-src/.
+# These assert the money paths the protocol rests on — the bonding-curve math,
+# the 2% levy, the full DAO governance lifecycle, and the StepNet activation +
+# daily-reward distribution — so a green check here actually means something.
+
+on:
+  push:
+    paths:
+      - "contracts-src/**"
+      - "contracts-test/**"
+      - ".github/workflows/contracts-test.yml"
+  pull_request:
+    paths:
+      - "contracts-src/**"
+      - "contracts-test/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: contracts-test
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: contracts-test/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Hardhat compiles ./contracts; point it at the real sources at the repo
+      # root. Created here (not committed) so the repo needs no symlink.
+      - name: Link production sources
+        run: ln -sfn ../contracts-src contracts
+
+      - name: Run contract tests
+        run: npx hardhat test
