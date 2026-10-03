@@ -1,0 +1,40 @@
+name: verify-sources
+
+# Proves every file in ./contracts is the source of a contract deployed on
+# Polygon mainnet, by comparing it with the source Sourcify verified against the
+# on-chain bytecode. A mismatch fails the run; if Sourcify itself is unreachable
+# the script exits 2 and the run passes with a warning instead of flaking.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "contracts/**"
+      - "contracts-src/verify-sources.js"
+      - ".github/workflows/verify-sources.yml"
+  pull_request:
+    paths:
+      - "contracts/**"
+      - "contracts-src/verify-sources.js"
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Compare ./contracts with the Sourcify-verified sources
+        run: |
+          set +e
+          node contracts-src/verify-sources.js
+          code=$?
+          if [ "$code" -eq 2 ]; then
+            echo "::warning::Sourcify was unreachable — sources could not be checked on this run."
+            exit 0
+          fi
+          exit $code

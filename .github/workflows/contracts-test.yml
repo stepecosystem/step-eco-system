@@ -1,0 +1,45 @@
+name: contracts-test
+
+# Runs the Hardhat unit tests for the production contracts in ./contracts.
+# These assert the money paths the protocol rests on — the bonding-curve math,
+# the 2% levy, the full DAO governance lifecycle, the StepNet activation +
+# daily-reward distribution, the subscription conduit and its revenue split, the NFT treasury sale, the NFT buy-back desk and yield vault, and the
+# loyalty club — so a green check here actually means something.
+
+on:
+  push:
+    paths:
+      - "contracts/**"
+      - "contracts-src/**"
+      - "contracts-test/**"
+      - ".github/workflows/contracts-test.yml"
+  pull_request:
+    paths:
+      - "contracts/**"
+      - "contracts-src/**"
+      - "contracts-test/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: contracts-test
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: contracts-test/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # `npm test` assembles ./contracts from the production sources at the repo
+      # root (../contracts) plus the test-only mocks (../contracts-src/mocks),
+      # then runs Hardhat. The assembled folder is gitignored, never committed.
+      - name: Run contract tests
+        run: npm test

@@ -1,0 +1,32 @@
+{
+  "name": "step-eco-system-contracts",
+  "version": "1.1.0",
+  "description": "Step Eco System — the on-chain protocol on Polygon (DAI-backed token, bonding-curve DEX, binary subscription network, NFT treasury and buy-back fund, loyalty club, subscription revenue conduit, DAO governance) behind a line of AI products.",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "size": "hardhat size-contracts",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "ethereum",
+    "polygon",
+    "solidity",
+    "defi",
+    "smart-contracts",
+    "web3",
+    "dao"
+  ],
+  "author": "Step Eco System <stepecosystemteam@gmail.com>",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.12"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.0.2"
+  }
+}

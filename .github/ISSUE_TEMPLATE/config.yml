@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/stepecosystem/step-eco-system/blob/main/SECURITY.md
+    about: Please do not open a public issue for security problems — follow SECURITY.md and email the team privately.
+  - name: Use the dApp
+    url: https://net.stepnet.pro
+    about: The live front end for these contracts on Polygon mainnet.

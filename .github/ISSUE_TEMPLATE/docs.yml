@@ -1,0 +1,18 @@
+name: Documentation
+description: A correction or clarification to the docs.
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      placeholder: e.g. docs/StepNFTFund.md
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong or unclear?
+      description: If a statement disagrees with the code or the chain, please cite the line or the call.
+    validations:
+      required: true
